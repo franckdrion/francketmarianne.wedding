@@ -11,6 +11,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Noto+Serif+Display:wdth,wght@62.5..100,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
      <style>
+       ::root {
+         --creme: #e5ddd2;
+         --primary: #816e84;
+       }
       body {
         background-color: #e5ddd2;
         color: #816e84;
@@ -89,6 +93,10 @@
          justify-content: center;
          gap: 3rem;
        }
+       .invert {
+         background: var(--primary);
+         color: var(--creme);
+       }
        .img-left {
          border-radius: 2rem;
              width: 15rem;
@@ -120,7 +128,7 @@
         <p>à Champagnat-le-jeune</p>
       </div>
     </section>
-    <section>
+    <section class="invert">
       <div>
         <h2>RSVP</h2>
         <a href="https://forms.gle/2o3S3TfS7ZihWc4j9" target="_blank">Confirmer ma présence</a>
