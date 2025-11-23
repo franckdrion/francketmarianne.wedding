@@ -18,18 +18,13 @@
       section {
         padding: 2rem;
       }
-      p { 
-        text-align: center;
-        font-size: 3rem;
-        margin-top: 20vh;
-      }
       .display {
         font-family: "Noto Serif Display", serif;
         font-optical-sizing: auto;
         font-weight: 800;
         font-style: normal;
         font-variation-settings: "wdth" 65;
-        letter-spacing: -1rem;
+        letter-spacing: -.2rem;
       }
       .cursive {
         font-family: "Pinyon Script", cursive;
@@ -43,6 +38,7 @@
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
+        text-transform: uppercase;
       }
        h1 {
          text-align: center;
@@ -57,9 +53,14 @@
         line-height: .8;
          font-size: 5rem;
        }
+       h2 {
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+       }
        #s-banner {
          position: relative;
          color: white;
+          padding: 5rem 2rem;
        }
        #s-banner::after {
          content: '';
@@ -82,6 +83,10 @@
          aspect-ratio: auto;
          object-fit: cover;
        }
+       .img-left
+       .text-right {
+         
+       }
     </style>
   </head>
   <body class="sans-serif">
@@ -92,8 +97,11 @@
       </h1>
     </section>
     <section>
-      <h2>Le 15 août 2026</h2>
-      <p>à Champagnat-le-jeune</p>
+      <img class="img-left" src="./champagnat.webp" alt="Photo de champagnat">
+      <div class="text-right">
+        <h2>Le 15 août 2026</h2>
+        <p>à Champagnat-le-jeune</p>
+      </div>
     </section>
     <section>
       <div>
