@@ -55,11 +55,24 @@
         line-height: .8;
          font-size: 5rem;
        }
+       #s-banner {
+         position: relative;
+       }
+       #banner {
+         position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+         height: 100%;
+         width: 100%;
+         aspect-ratio: auto;
+         object-fit: cover;
+       }
     </style>
   </head>
   <body class="sans-serif">
-    <section>
-      <img src="./banner.webp" alt="Paysage d'auvergne">
+    <section id="s-banner">
+      <img id="banner" src="./banner.webp" alt="Paysage d'auvergne">
       <h1>
         Mariage de <span class="display"><span class="cursive">M</span>arianne <span class="cursive">et</span> Franck</span>
       </h1>
