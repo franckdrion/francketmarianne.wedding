@@ -69,9 +69,9 @@
        }
        h2.display {
           font-size: 5rem;
-          text-align: center;
-          margin: 0;
+          text-align: left;
          line-height: 1;
+          margin: 0 0 0.25rem;
        }
        #s-banner {
          position: relative;
@@ -99,6 +99,10 @@
          width: 100%;
          aspect-ratio: auto;
          object-fit: cover;
+       }
+       #s-banner h2 {
+        text-align: center;
+        font-weight: 400;
        }
        #s-img-text {
          text-transform: uppercase;
@@ -149,9 +153,9 @@
         margin: 0;
        }
        .button {
-        transition: all .3s ease;
+        transition: all .1s ease;
          display: inline-block;
-        background: var(--primary-dark);
+        background: transparent;
         margin-bottom: .5rem;
         padding: 1rem;
         border-radius: 3px;
@@ -160,15 +164,21 @@
         text-transform: none;
         font-family: "Raleway", sans-serif;
         font-weight: 400;
+        border: 1px solid white;
+        text-transform: uppercase;
+        font-size: .8rem;
+        letter-spacing: 2px;
        }
        .button:hover {
-        background-color: var(--primary);
+        background-color: var(--primary-dark);
+        border-color: var(--primary-dark);
+        transition: all .3s ease;
        }
        #rsvp {
         position: relative;
-        text-align: center;
-        padding: 10rem 2rem;
-        width: max(60%, 20rem);
+        text-align: left;
+        padding: 10rem 3rem 10rem 25%;
+        width: max(40%, 20rem);
        }
        #rsvp::after {
          background: var(--primary);
@@ -183,12 +193,42 @@
        }
        #rsvp p {
          margin-top: 0;
-         text-transform: uppercase;
-        letter-spacing: .2rem;
+         letter-spacing: 1px;
+        text-align: left;
+        font-size: .9rem;
+        max-width: 19rem;
+       }
+       p strong {
+        font-weight: 700;
+       }
+       #details h2 {
+        font-size: 2rem;
+        margin: 0 0 1rem;
+       }
+       #details h3 {
+
+       }
+       #details p {
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: .9rem;
+        margin-top: 0;
        }
        #countdown {
-         display: flex;
+        display: flex;
         justify-content: space-evenly;
+        padding: 3rem;
+        background: var(--primary-dark);
+        color: var(--secondary);
+       }
+       #contact {
+        background: var(--secondary);
+       }
+       #contact p {
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: .9rem;
+        margin-top: 0;
        }
     </style>
   </head>
@@ -211,29 +251,31 @@
       <img id="img-rsvp" src="./rsvp.webp" alt="Paysage d'auvergne">
       <div id="rsvp">
         <h2 class="display">RSVP</h2>
-        <p>Avant le 31 mars</p>
+        <p>Afin de faciliter l'organisation, merci de confirmer votre présence via le bouton ci-dessous <strong>avant le 31 mars</strong>.</p>
         <a href="https://forms.gle/2o3S3TfS7ZihWc4j9" target="_blank" class="button">Confirmer ma présence</a>
       </div>
     </section>
-    <section>
+    <section id="details">
       <h2 class="cursive">Détails</h2>
       <div>
-        <h3>Dresscode</h3>
+        <h3 class="display">Dresscode</h3>
         <p>Peu importe la couleur tant qu'elle vous met en valeur - excepté le blanc ou le lin naturel, réservé aux mariés.</p>
-        <h3>Hébergement</h3>
+        <h3 class="display">Hébergement</h3>
         <p>
           Plusieurs solutions d'hébergement sont possibles sur le domaine :
-          <ul>
-            <li>En dortoir, type auberge de jeunesse</li>
-            <li>Location d'un gite 15 places</li>
-            <li>Location d'une chambre d'hôte</li>
-          </ul>
+        </p>
+        <ul>
+          <li>En dortoir, type auberge de jeunesse</li>
+          <li>Location d'un gite 15 places</li>
+          <li>Location d'une chambre d'hôte</li>
+        </ul>
+        <p>
           En outre, de nombreux gites sont disponibles dans la région.</br>
           Les préférences d'hébergements sont à préciser dans le formulaire de présence.
         </p>
       </div>
       <div>
-        <h3>Lieux</h3>
+        <h3 class="display">Lieux</h3>
         <p>Cérémonie laïque : <a href="https://www.google.com/maps/dir//Champagnat-le-Jeune,+63580/@45.4502852,3.4258937,232a,35y,5.23t/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x47f65c5b94184a05:0x4093cafcbe5c810!2m2!1d3.426086!2d45.450776?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="button">
           Champagnat-le-Jeune</a></p>
         <p>Récéption : <a href="https://www.google.com/maps/dir//La+Petite+Sarre,+Manglieu/@45.591527,3.3503188,584m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x47f6f774d4e828d3:0x8c48547df84656a2!2m2!1d3.352431!2d45.592013?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="button">
@@ -248,8 +290,8 @@
         <div>--<span>secondes</span></div>
       </div>
     </section>
-    <section>
-      <h2>Contact</h2>
+    <section id="contact">
+      <h2 class="display">Contact</h2>
       <p>Pour toutes questions supplémentaires, n'hésitez pas à nous écrire directement.</br>
     Nous avons hâtes de faire la fête avec vous ♡</p>
     </section>
