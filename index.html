@@ -224,6 +224,9 @@
         margin-top: 0;
         color: black;
        }
+       #details {
+        padding: 5rem 2rem;
+       }
        #details ul {
         font-weight: 400;
         font-size: .9rem;
@@ -231,9 +234,28 @@
         color: black;
         padding-left: 1.5rem;
        }
-       #details div {
+       #details article {
         margin-left: 3rem;
-        max-width: 40rem;
+        max-width: 32rem;
+       }
+       #details div {
+        position: relative;
+       }
+       #details div::after {
+        background: var(--creme);
+         content: '';
+         position: absolute;
+         z-index: -1;
+         top: 0;
+         left: 0;
+         height: 100%;
+         width: 100%;
+         opacity: .8;
+       }
+       #details img {
+        position: relative;
+        z-index: -2;
+        opacity: .5;
        }
        #countdown {
         display: flex;
@@ -250,7 +272,6 @@
         font-weight: 400;
         font-size: .9rem;
         margin-top: 0;
-        
        }
     </style>
   </head>
@@ -278,8 +299,11 @@
       </div>
     </section>
     <section id="details">
-      <h2 class="cursive">Détails</h2>
       <div>
+        <img class="bg-img" src="./vulcania.webp" alt="Vulcania">
+      </div>
+      <h2 class="cursive">Détails</h2>
+      <article>
         <h3 class="display">Dresscode</h3>
         <p>Peu importe la couleur tant qu'elle vous met en valeur - excepté le blanc ou le lin naturel, réservé aux mariés.</p>
         <h3 class="display">Hébergement</h3>
@@ -300,7 +324,7 @@
           Champagnat-le-Jeune</a></p>
         <p>Récéption : <a href="https://www.google.com/maps/dir//La+Petite+Sarre,+Manglieu/@45.591527,3.3503188,584m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x47f6f774d4e828d3:0x8c48547df84656a2!2m2!1d3.352431!2d45.592013?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="button">
           La Petite Sarre</a></p>
-      </div>
+        </article>
     </section>
     <section class="invert">
       <div id="countdown">
