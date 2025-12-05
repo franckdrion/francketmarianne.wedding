@@ -379,10 +379,10 @@
 
   document.getElementById("countdown")
     .innerHTML =
-      '<div>' + d + '<span>jours</span></div>' +
-      '<div>' + h + '<span>heures</span></div>' +
-      '<div>' + m + '<span>minutes</span></div>' +
-      '<div>' + s + '<span>secondes</span></div>' ;
+      '<div class="display">' + d + '<span>jours</span></div>' +
+      '<div class="display">' + h + '<span>heures</span></div>' +
+      '<div class="display">' + m + '<span>minutes</span></div>' +
+      '<div class="display">' + s + '<span>secondes</span></div>' ;
 }
 setInterval('updateTimer()', 1000 );
 
