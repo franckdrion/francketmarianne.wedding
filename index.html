@@ -161,7 +161,7 @@
          display: inline-block;
         background: transparent;
         margin-bottom: .5rem;
-        padding: 1rem;
+        padding: .75rem 1rem;
         border-radius: 3px;
         color: white;
         text-decoration: none;
@@ -258,6 +258,7 @@
        }
        #details a {
         color: var(--primary);
+        white-space: nowrap;
        }
        .invert.dark {
         background-color: var(--primary-dark);
@@ -376,6 +377,30 @@
         font-size: 4vw;
         max-width: 60vw;
        }
+       #details {
+        padding: 3rem 2rem;
+       }
+       #details h2 {
+        font-size: 10vw;
+       }
+       #details h3 {
+        font-size: 12vw;
+       }
+       #details div {
+        position: static;
+       }
+       #details img {
+        object-position: right;
+        position: absolute;
+        z-index: -1;
+        opacity: .1;
+        left: -8vw;
+        margin-top: 3rem;
+       }
+       #details p,
+       #details ul {
+        font-size: 4vw;
+       }
       }
     </style>
   </head>
@@ -471,7 +496,7 @@
       '<div class="display">' + m + '<span>minutes</span></div>' +
       '<div class="display">' + s + '<span>secondes</span></div>' ;
 }
-setInterval('updateTimer()', 1000 );
+//setInterval('updateTimer()', 1000 );
 
     </script>
   </body>
