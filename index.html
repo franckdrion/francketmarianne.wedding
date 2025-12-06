@@ -68,6 +68,9 @@
         text-transform: uppercase;
         letter-spacing: .2rem;
        }
+       h2 .cursive:last-of-type {
+        font-size: 3rem;
+       }
        h2.display {
           font-size: 5rem;
           text-align: left;
@@ -164,7 +167,7 @@
         text-decoration: none;
         text-transform: none;
         font-family: "Raleway", sans-serif;
-        font-weight: 400;
+        font-weight: 600;
         border: 1px solid white;
         text-transform: uppercase;
         font-size: .8rem;
@@ -311,54 +314,67 @@
        }
        @media (max-width: 700px) {
         .cursive {
-          font-size: 5rem;
+          font-size: 22vw;
         }
         h1 {
         font-size: 1.2rem;
+        margin-top: 0;
        }
        h1 > span {
         margin: 2rem 0;
-        font-size: 3.5rem;
+        font-size: 18vw;
        }
        h2.display {
-          font-size: 5rem;
+        font-size: 20vw;
           margin: 0 0 0.25rem;
+       }
+       h2 .cursive:last-of-type {
+        font-size: 10vw;
        }
        #s-banner {
           padding: 5rem 2rem;
+          min-height: 60vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
        }
        #s-banner h2 {
-        font-size: 1rem;
+        font-size: 5vw;
+        margin-bottom: 0;
        }
        #s-img-text {
-        font-size: 1.5rem;
-        padding: 3rem 1rem;
+        font-size: 8vw;
+        padding: 5rem 1rem;
+        position: relative;
        }
        .img-left {
         width: 10rem;
-        height: 10rem;
-        margin: 0 0 1rem -5rem;
+        height: 15rem;
+        margin-left: -10rem;
        }
        .text-right {
-        margin: 0 -3rem -2rem 0;
+        margin: 0;
+        position: absolute;
+        right: 1.5rem;
+        top: 7rem;
        }
        .text-right h2 {
         font-size: 1rem;
        }
        .button {
         padding: .5rem;
-        font-size: .4rem;
+        font-size: 3vw;
        }
        #rsvp {
-        padding: 5rem 3rem 5rem 3rem;
-        width: max(40%, 10rem);
+        padding: 20vh 3rem;
+        width: 60vw;
        }
        #rsvp h2 {
         margin-left: -1rem;
        }
        #rsvp p {
-        font-size: .7rem;
-        max-width: 10rem;
+        font-size: 4vw;
+        max-width: 60vw;
        }
       }
     </style>
@@ -368,7 +384,7 @@
       <img id="banner" src="./banner.webp" alt="Paysage d'auvergne">
       <h2>Mariage de</h2>
       <h1>
-        <span class="display"><span class="cursive" style="letter-spacing: -.3rem;">M</span>arianne <span class="cursive" style="text-transform: capitalize; font-size: 3rem; display: block; margin-top: 0; margin-bottom: .5rem;">et</span> Franck</span>
+        <span class="display"><span class="cursive" style="letter-spacing: -.3rem;">M</span>arianne <span class="cursive" style="text-transform: capitalize; display: block; margin-top: 0; margin-bottom: .5rem;">et</span> Franck</span>
       </h1>
     </section>
     <section id="s-img-text">
