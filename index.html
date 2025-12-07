@@ -24,6 +24,7 @@
         color: var(--primary);
         margin: 0;
         font-family: "Raleway", sans-serif;
+        overflow-x: hidden;
       }
       section {
         padding: 2rem;
@@ -243,6 +244,9 @@
         display: flex;
         justify-content: center;
         position: relative;
+        overflow: visible;
+        z-index: 9;
+        overflow-x: clip;
        }
        #details ul {
         font-weight: 400;
@@ -327,10 +331,17 @@
        }
        .deco-word {
           position: absolute;
+          z-index: 1;
           opacity: 0.1;
           font-size: 30rem;
-          bottom: -3.5rem;
+          bottom: -4rem;
           right: -8rem;
+        }
+        .invert.dark .deco-word {
+          z-index: 0;
+          color: white;
+          bottom: unset;
+          top: -6rem;
         }
        @media (max-width: 700px) {
         .cursive {
@@ -517,6 +528,7 @@
         <span class="cursive deco-word">Détails</span>
     </section>
     <section class="invert dark">
+      <span class="cursive deco-word">Détails</span>
       <div id="countdown">
         <div class="display">--<span>jours</span></div>
         <div class="display">--<span>heures</span></div>
