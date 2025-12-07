@@ -113,7 +113,10 @@
         font-weight: 400;
         font-size: 3rem;
         text-align: center;
-         padding: 5rem 2rem;
+        padding: 3rem 2rem 0;
+        position: relative;
+        z-index: 1;
+        overflow: visible;
        }
        .invert {
          position: relative;
@@ -132,21 +135,24 @@
          opacity: .7;
        }
        .img-left {
+        bottom: -3rem;
         width: 20rem;
         height: 20rem;
         object-fit: cover;
         object-position: bottom;
         object-view-box: inset(20%);
-        margin: 0 0 1rem -15rem;
+        margin-left: -15rem;
        }
        .text-right {
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 -15rem -2rem 0;
         position: relative;
-        z-index: 1;
+        z-index: 9;
+        top: 5rem;
+        margin-top: 0;
+        margin-left: -10rem;
        }
        .text-right h2 {
         font-weight: 400;
@@ -349,7 +355,7 @@
        }
        #s-img-text {
         font-size: 8vw;
-        padding: 5rem 1rem;
+        padding: 0 1rem;
         position: relative;
        }
        .img-left {
@@ -361,7 +367,8 @@
         margin: 0;
         position: absolute;
         right: 1.5rem;
-        top: 7rem;
+        top: 5rem;
+        z-index: 2;
        }
        .text-right h2 {
         font-size: 1rem;
@@ -418,10 +425,14 @@
        #contact {
         padding: 20vh 2rem;
         flex-direction: column;
+        padding-top: 0;
+        overflow: visible;
+        position: relative;
        }
        #contact img {
         margin-top: 0;
-        margin-bottom: .5rem;
+        top: -3rem;
+        margin-bottom: -2rem;
        }
        #contact article {
         margin-left: 0;
@@ -445,11 +456,11 @@
       </h1>
     </section>
     <section id="s-img-text">
+      <img class="img-left" src="./champagnat.webp" alt="Photo de champagnat">
       <div class="text-right">
         <h2>Le 15 août 2026</h2>
         <p class="display">à Champagnat-le-jeune</p>
       </div>
-      <img class="img-left" src="./champagnat.webp" alt="Photo de champagnat">
     </section>
     <section class="invert">
       <img id="img-rsvp" src="./rsvp.webp" alt="Paysage d'auvergne">
