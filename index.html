@@ -333,15 +333,16 @@
           position: absolute;
           z-index: 1;
           opacity: 0.1;
-          font-size: 30rem;
-          bottom: -4rem;
-          right: -8rem;
+          font-size: 25rem;
+          right: -10rem;
+          top: -10rem;
         }
-        .invert.dark .deco-word {
+        .invert .deco-word {
           z-index: 0;
           color: white;
           bottom: unset;
-          top: -6rem;
+          top: unset;
+          bottom: -6rem;
         }
        @media (max-width: 700px) {
         .cursive {
@@ -349,8 +350,12 @@
         }
         .deco-word {
           font-size: 50vw;
-          bottom: -3.5rem;
+          top: -12vw;
           right: -8rem;
+        }
+        .invert .deco-word {
+          bottom: -28vw;
+          top: unset;
         }
         h1 {
         font-size: 1.2rem;
@@ -495,6 +500,7 @@
         <p>Afin de faciliter l'organisation, merci de confirmer votre présence via le bouton ci-dessous <strong>avant le 31 mars</strong>.</p>
         <a href="https://forms.gle/2o3S3TfS7ZihWc4j9" target="_blank" class="button">Confirmer ma présence</a>
       </div>
+      <span class="cursive deco-word">Détails</span>
     </section>
     <section id="details">
       <div>
@@ -528,7 +534,6 @@
         <span class="cursive deco-word">Détails</span>
     </section>
     <section class="invert dark">
-      <span class="cursive deco-word">Détails</span>
       <div id="countdown">
         <div class="display">--<span>jours</span></div>
         <div class="display">--<span>heures</span></div>
