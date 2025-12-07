@@ -252,7 +252,7 @@
         color: black;
        }
        #details {
-        padding: 5rem 2rem;
+        padding: 5rem 2rem 7rem;
         display: flex;
         justify-content: center;
         position: relative;
@@ -357,8 +357,17 @@
           top: unset;
           bottom: -10rem;
         }
-        #calendar {
+        #details #calendar {
           position: absolute;
+          bottom: 2.5rem;
+          background: var(--primary);
+          color: white;
+          border: 1px solid var(--primary);
+          opacity: .7;
+        }
+        #details #calendar:hover {
+          background: var(--primary-dark);
+          opacity: 1;
         }
        @media (max-width: 700px) {
         .cursive {
@@ -426,7 +435,7 @@
         font-size: 10vw;
        }
        .button {
-        padding: .5rem;
+        padding: .5rem 1rem;
         font-size: 3vw;
        }
        #rsvp {
@@ -441,7 +450,7 @@
         max-width: 60vw;
        }
        #details {
-        padding: 5rem 2rem;
+        padding: 5rem 2rem 7rem;
        }
        #details h2 {
         font-size: 10vw;
